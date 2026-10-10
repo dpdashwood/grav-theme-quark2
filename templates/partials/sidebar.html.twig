@@ -1,5 +1,25 @@
 {% set new_base_url = blog.url == '/' ? '' : blog.url %}
 
+{% if config.plugins.('social-media-links').enabled %}
+<div class="sidebar-content">
+    <h4>{{ 'THEME_QUARK2.SIDEBAR.SOCIALMEDIA.HEADLINE'|t }}</h4>
+    {% include 'partials/socialmedia.html.twig' %}
+</div>
+{% endif %}
+
+<div class="sidebar-content">
+    <h4>FIND US!</h4>
+    <address>
+        <p>
+            <a href="https://maps.app.goo.gl/t9igcFWHSmicswjy9">50-52 Cunninghame St<br>Sale VIC 3850</a>
+        </p>
+        <p>
+            📞: <a href="tel:+61351446633">(03) 5144 6633</a><br>
+            📧: <a href="mailto:contact@salecinema.com.au">contact@salecinema.com.au</a>
+        </p>
+    </address>
+</div>
+
 {% if config.plugins.simplesearch.enabled %}
 <div class="sidebar-content">
     {% include 'partials/simplesearch_searchbox.html.twig' ignore missing %}

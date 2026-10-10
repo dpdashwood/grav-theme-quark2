@@ -1,6 +1,13 @@
 <span class="blog-date">
-    <time class="dt-published" datetime="{{ page.date|date('c') }}">
-        <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-        {{ page.date|date(system.pages.dateformat.short) }}
-    </time>
+    {% if 'tbc' in page.taxonomy.category %}
+        <span class="dt-published">
+            <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+            To Be Confirmed
+        </span>
+    {% else %}
+        <time class="dt-published" datetime="{{ page.date|date('c') }}">
+            <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+            From {{ page.date|date(system.pages.dateformat.short) }}
+        </time>
+    {% endif %}
 </span>

@@ -4,3 +4,65 @@
  * This file is safe to edit. It is loaded last so anything here overrides
  * theme.css without having to mark rules !important.
  */
+
+:root {
+  --pico-border-width: 0.250rem
+}
+
+.navbar-brand img,
+.navbar-brand svg {
+  height: 74px;
+  width: auto;
+  display: block;
+}
+
+#body-wrapper {
+  padding-block: unset;
+}
+
+.blog-page-header {
+  margin: unset;
+  max-width: unset;
+}
+
+.blog-page-intro {
+  margin: auto;
+  max-width: 720px;
+}
+
+.grav-youtube {
+  aspect-ratio: 16 / 9;
+}
+
+#blog-hero {
+  background-size: contain;
+}
+
+.hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+.left-col-freeze {
+  tr>td:nth-child(1),
+  th:nth-child(1) {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.cinema1 {
+  color: #2ec26b !important;
+}
+
+.cinema2 {
+  color: #3398db !important;
+}
+
+.cinema3 {
+  color: #e0402e !important;
+}
+
+.no-sessions {
+  color: #aaa !important;
+}

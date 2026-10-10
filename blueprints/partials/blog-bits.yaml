@@ -21,6 +21,15 @@ form:
       type: spacer
       title: Configuration
 
+    header.trailer_url:
+      type: text
+      toggleable: true
+      label: YouTube Trailer URL
+      help: Link to the YouTube Trailer for this item
+      default: ''
+      placeholder: ''
+      size: medium
+
     header.blog_url:
       type: text
       toggleable: true
